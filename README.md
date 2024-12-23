@@ -1,16 +1,19 @@
-### SYNCHRONOUS-UP-COUNTER
-
-**AIM:**
+### NAME: DEEPAK J G 
+### REG NO: 24901065
+# EXP-11: HALF ADDER AND SUBTRACTOR
+# AIM:
 
 To implement 4 bit synchronous up counter and validate functionality.
 
-**SOFTWARE REQUIRED:**
+# SOFTWARE REQUIRED:
 
 Quartus prime
 
-**THEORY**
+# THEORY
 
-**4 bit synchronous UP Counter**
+When counter is clocked such that each flip-flop in the counter is triggered at the same time , the counter is called synchronous counter.
+
+*4 bit synchronous UP Counter*
 
 If we enable each J-K flip-flop to toggle based on whether or not all preceding flip-flop outputs (Q) are “high,” we can obtain the same counting sequence as the asynchronous circuit without the ripple effect, since each flip-flop in this circuit will be clocked at exactly the same time:
 
@@ -26,21 +29,42 @@ Since the first (LSB) flip-flop needs to toggle at every clock pulse, its J and 
 The next flip-flop need only “recognize” that the first flip-flop’s Q output is high to be made ready to toggle, so no AND gate is needed.
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
-**Procedure**
+# PROCEDURE:
 
-/* write all the steps invloved */
+1. Type the program in Quartus software.
 
-**PROGRAM**
+2. Compile and run the program.
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+3. Generate the RTL schematic and save the logic diagram.
 
-Developed by: RegisterNumber:
-*/
+4. Create nodes for inputs and outputs to generate the timing diagram.
 
-**RTL LOGIC UP COUNTER**
+5. For different input combinations generate the timing diagram.
 
-**TIMING DIAGRAM FOR IP COUNTER**
+# PROGRAM
+~~~
 
-**TRUTH TABLE**
+module ex11(out,clk,rstn);
+input clk,rstn;
+output reg [3:0]out;
+always @ (posedge clk)
+begin
+   if(!rstn)
+     out<=0;
+   else 
+     out <= out+1;
+end
+endmodule
+~~~
 
-**RESULTS**
+# RTL OUTPUT:
+
+![Screenshot 2024-12-17 192123](https://github.com/user-attachments/assets/d64a28b2-0c7d-484c-80e9-d449936fc3fc)
+
+# OUTPUT DIAGRAM:
+
+![Screenshot 2024-12-17 192300](https://github.com/user-attachments/assets/4062316e-0dc3-45b9-8007-739e1fc90faf)
+
+# RESULT
+
+The Synchronous Up Counter was implemented successfully using Verilog, and its functionality was validated through simulation. The output matches the expected functional table of the Synchronous Up Counter.
