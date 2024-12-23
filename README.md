@@ -1,6 +1,6 @@
 ### NAME: DEEPAK J G 
 ### REG NO: 24901065
-# EXP-11: HALF ADDER AND SUBTRACTOR
+# EXP-11: SYNCHRONUS UP COUNTER
 # AIM:
 
 To implement 4 bit synchronous up counter and validate functionality.
