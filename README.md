@@ -63,7 +63,8 @@ endmodule
 
 # OUTPUT DIAGRAM:
 
-![Screenshot 2024-12-17 192300](https://github.com/user-attachments/assets/4062316e-0dc3-45b9-8007-739e1fc90faf)
+![waveform](https://github.com/user-attachments/assets/77411d3c-9c86-4bf8-b7d9-ea0be1e3a186)
+
 
 # RESULT
 
