@@ -1,6 +1,6 @@
 ### NAME: DEEPAK J G 
 ### REG NO: 24901065
-# EXP-11: IMPLEMENTATION OF SYNCHRONUS UP COUNTER
+# EXP-7: IMPLEMENTATION OF SYNCHRONUS UP COUNTER
 # AIM:
 
 To implement 4 bit synchronous up counter and validate functionality.
